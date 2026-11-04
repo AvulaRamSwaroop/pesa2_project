@@ -1,0 +1,31 @@
+name,status,notes,source_or_action
+ZDT1,implemented_analytical_front,"Standard unconstrained bi-objective problem; variables [0,1]",Deb et al. (2002); tested
+ZDT2,implemented_analytical_front,"Standard unconstrained bi-objective problem; variables [0,1]",Deb et al. (2002); tested
+ZDT3,implemented_analytical_front,"Five disconnected Pareto-front segments",Deb et al. (2002); segment endpoints require reference audit
+ZDT4,implemented_analytical_front,"Multimodal; x1 in [0,1], remaining variables in [-5,5]",Deb et al. (2002); tested
+ZDT6,implemented_analytical_front,"Oscillatory first objective; front parameterized directly by attainable f1",Deb et al. (2002); tested
+DTLZ1,implemented_reference_sampling,"Analytical Pareto hyperplane sampled with a Dirichlet distribution",Deb et al. (2002); sampling coverage audit remains
+DTLZ2,implemented_reference_sampling,"Unit-sphere positive orthant reference sampling",Deb et al. (2002); sampling coverage audit remains
+DTLZ3,implemented_reference_sampling,"Same Pareto-front geometry as DTLZ2; multimodal g",Deb et al. (2002); sampling coverage audit remains
+DTLZ4,implemented_reference_sampling,"Same Pareto-front geometry as DTLZ2; biased mapping",Deb et al. (2002); sampling coverage audit remains
+DTLZ5,implemented_reference_sampling,"Degenerate/lower-dimensional Pareto manifold sampling; objective-count tests needed",Deb et al. (2002); audit remains
+DTLZ6,implemented_reference_sampling,"Degenerate front; g and theta equations need further source-to-code audit",Deb et al. (2002); audit remains
+DTLZ7,implemented_approximate_reference,"Discontinuous front approximated by candidate sampling; not exact",Deb et al. (2002); improve sampling before final metrics
+FONSECA,implemented_approximate_reference,"Standard Fonseca-Fleming objectives; reference front is sampled, not analytical",Fonseca & Fleming (1998); DEAP benchmark documentation
+KURSAWE,implemented_approximate_reference,"Standard 3-variable Kursawe problem; reference front is sampled, not analytical",Kursawe; DEAP benchmark documentation
+SCHAFFER,implemented_analytical_front,"Classic Schaffer 2-objective function f1=x^2, f2=(x-2)^2; PF parameterized over x in [0,2]",Schaffer (1987); DEAP benchmark documentation
+VIENNET,implemented_approximate_reference,"Standard 2-variable, 3-objective Viennet equations; reference set sampled and approximate",Viennet benchmark; formula/source audit recommended
+Binh (1),needs_exact_variant_source,"Not guessed: label does not uniquely identify a standard benchmark equation",Need original equation from attached benchmark source
+Binh (3),needs_exact_variant_source,"Not assumed to mean Binh-Nguyen/BNH; numbered variant ambiguous",Need original equation from attached benchmark source
+Deb,needs_exact_variant_source,"Legacy name alone is ambiguous",Need exact equations and bounds
+Deb (2),needs_exact_variant_source,"Numbered variant ambiguous",Need exact equations and bounds
+Fonseca (2),needs_exact_variant_source,"Not aliased to standard Fonseca-Fleming problem",Need exact variant definition
+Laumanns,needs_exact_variant_source,"Legacy test problem name without a unique equation/bounds source",Need exact equations and bounds
+Murata,needs_exact_variant_source,"Legacy test problem name without a unique equation/bounds source",Need exact equations and bounds
+Quagliarella,needs_exact_variant_source,"Legacy test problem name without a unique equation/bounds source",Need exact equations and bounds
+Rendon,needs_exact_variant_source,"Legacy test problem name without a unique equation/bounds source",Need exact equations and bounds
+Rendon (2),needs_exact_variant_source,"Numbered variant ambiguous",Need exact equations and bounds
+Schaffer (2),needs_exact_variant_source,"Not assumed to be classic Schaffer; numbered variant ambiguous",Need exact equations and bounds
+Srinivas,known_constrained_not_supported,"Standard Srinivas problem is constrained; current PESA-II runner does not enforce constraints",Add feasibility-first constraint handling only after baseline scope decision
+Tanaka,known_constrained_not_supported,"Standard Tanaka problem is constrained; current PESA-II runner does not enforce constraints",Add feasibility-first constraint handling only after baseline scope decision
+Viennet (2),needs_exact_variant_source,"Numbered variant ambiguous; not assumed to be standard Viennet",Need exact equations and bounds

@@ -1,0 +1,11 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "pesa2-research-reproduction"
+version = "1.0.0"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "matplotlib>=3.7", "pandas>=2.0", "python-docx>=1.1", "reportlab>=4.0"]
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
