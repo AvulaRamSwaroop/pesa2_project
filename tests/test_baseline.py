@@ -23,7 +23,7 @@ def test_dtlz5_reference_manifold():
  assert np.allclose(F[:,0],F[:,1],atol=1e-6)
 
 def test_hypervolume_2d_rectangle():
- from metrics.metrics import hv2
+ from metrics_initial.metrics import hv2
  # One point (1,1) and reference (3,3) covers area 4.
  assert abs(hv2(np.array([[1.,1.]]),np.array([3.,3.]))-4.0)<1e-12
 
@@ -35,7 +35,7 @@ def test_zdt4_standard_bounds():
  assert np.all(p.upper_bounds[1:] == 5)
 
 def test_hv_uses_supplied_reference_point():
- from metrics.metrics import compute_metrics
+ from metrics_initial.metrics import compute_metrics
  F=np.array([[0.5,0.5]])
  R=np.array([[0.0,1.0],[1.0,0.0]])
  m=compute_metrics(F,R,0.1,10,hv_ref=np.array([2.0,2.0]))

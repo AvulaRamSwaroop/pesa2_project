@@ -1,1 +1,1 @@
-from .problems import BENCHMARK_REGISTRY
+from .benchmarks_30 import BENCHMARK_REGISTRY

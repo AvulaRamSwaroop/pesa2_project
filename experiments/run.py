@@ -8,9 +8,9 @@ from datetime import datetime
 from matplotlib.backends.backend_pdf import PdfPages
 import matplotlib.pyplot as plt
 
-from benchmarks.problems import BENCHMARK_REGISTRY
+from benchmarks.benchmarks_30 import BENCHMARK_REGISTRY
 from algorithms.pesa2.pesa2 import PESA2
-from metrics.metrics import calc_igd, calc_gd, calc_spacing
+from metrics_initial.metrics import calc_igd, calc_gd, calc_spacing
 from visualization.plots import create_and_save_plots
 from experiments.report import save_metrics
 
