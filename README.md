@@ -1,4 +1,4 @@
-# PESA-II research reproduction (baseline)
+# PESA-II 
 
 A reproducible Python project with PESA-II-style region-based selection, ZDT1/2/3/4/6, DTLZ1-7, and standard Fonseca, Kursawe, Schaffer, and Viennet problems, per-run CSV/JSON output, metrics, separate front images, and Word/PDF comparison reports.
 
